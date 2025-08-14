@@ -38,6 +38,14 @@ class DataGenerator {
         return name;
     }
 
+    static String dataNameWishLetterEBrief() {
+        Random random = new Random();
+        int rand = random.nextInt(7);
+        String nameWishEBrief[] = {"Кизляр Ерёма", "Ёжиков Артур", "Егорова Фёкла", "Берёза Алексей",
+                "Дрёма Василиса", "Кандратов Стёпа"};
+        return nameWishEBrief[rand];
+    }
+
     static String dataInput(int days) {
         String inputDate = LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern("dd.MM.uuuu"));
         return inputDate;
