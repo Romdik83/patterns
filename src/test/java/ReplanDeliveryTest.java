@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
-public class ReplanDeliveryTest {
+class ReplanDeliveryTest {
 
     void dataInput(int days) {
         SelenideElement data = $("[data-test-id=date]");
