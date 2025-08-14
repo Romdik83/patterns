@@ -27,8 +27,8 @@ public class ReplanDeliveryTest {
         $("[placeholder=Город]").setValue(DataGenerator.cityForInput());
         int inDays = 4;
         dataInput(inDays);
-        $("[data-test-id=phone]").$("[name=phone]").setValue(DataGenerator.dataPhone());
         $("[data-test-id=name].input_type_text .input__control").setValue(DataGenerator.dataName());
+        $("[data-test-id=phone]").$("[name=phone]").setValue(DataGenerator.dataPhone());
         $("[class=checkbox__box]").click();
         $$("[class=button__text]").find(exactText("Запланировать")).click();
         $("[data-test-id=success-notification]").$("[class=notification__content]")
@@ -44,8 +44,8 @@ public class ReplanDeliveryTest {
         $("[placeholder=Город]").setValue(DataGenerator.cityNoVal());
         int inDays = 4;
         dataInput(inDays);
-        $("[data-test-id=phone]").$("[name=phone]").setValue(DataGenerator.dataPhone());
         $("[data-test-id=name].input_type_text .input__control").setValue(DataGenerator.dataName());
+        $("[data-test-id=phone]").$("[name=phone]").setValue(DataGenerator.dataPhone());
         $("[class=checkbox__box]").click();
         $$("[class=button__text]").find(exactText("Запланировать")).click();
         $("[data-test-id=city] .input__sub").shouldHave
@@ -57,13 +57,13 @@ public class ReplanDeliveryTest {
         $("[placeholder=Город]").setValue(DataGenerator.cityForInput());
         SelenideElement data = $("[data-test-id=date]");
         data.$("[value]").doubleClick().sendKeys(Keys.BACK_SPACE);
-        $("[data-test-id=phone]").$("[name=phone]").setValue(DataGenerator.dataPhone());
         $("[data-test-id=name].input_type_text .input__control").setValue(DataGenerator.dataName());
+        $("[data-test-id=phone]").$("[name=phone]").setValue(DataGenerator.dataPhone());
         $("[class=checkbox__box]").click();
         $$("[class=button__text]").find(exactText("Запланировать")).click();
         $("[data-test-id=date] .input__sub").shouldHave
                 (exactTextCaseSensitive("Неверно введена дата"));
     }
-    }
+}
 
 
