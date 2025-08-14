@@ -41,7 +41,7 @@ class DataGenerator {
     static String dataNameWishLetterEBrief() {
         Random random = new Random();
         int rand = random.nextInt(7);
-        String nameWishEBrief[] = {"Кизляр Ерёма", "Ёжиков Артур", "Егорова Фёкла", "Берёза Алексей",
+        String nameWishEBrief[] = {"Семёнова Татьяна", "Королёва Елена", "Филина Алёна", "Иванов Артём",
                 "Дрёма Василиса", "Кандратов Стёпа"};
         return nameWishEBrief[rand];
     }
